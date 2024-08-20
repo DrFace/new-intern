@@ -9,7 +9,8 @@ export default function Categories({ auth }: PageProps) {
             user={auth.user}
             header={<div className='flex justify-between'>
                 <h2 className="font-semibold text-xl text-gray-800 leading-tight">Categories</h2>
-                <Link href={"/Category/Create"} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Create Category
+                <Link href={route("categories.create")} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+                Create Category
                 </Link>
             </div>
             }
