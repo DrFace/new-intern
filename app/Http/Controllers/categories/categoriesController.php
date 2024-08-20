@@ -14,7 +14,7 @@ class categoriesController extends Controller
     public function index()
     {
         //
-       return Inertia::render('categories/index'); 
+       return Inertia::render('Categories/All/Index');
     }
 
     /**
@@ -23,6 +23,7 @@ class categoriesController extends Controller
     public function create()
     {
         //
+        return Inertia::render('Categories/Create/Index');
     }
 
     /**
